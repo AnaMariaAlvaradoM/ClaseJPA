@@ -34,6 +34,10 @@ public class PersonaService implements IpersonaService{
         return perso;
     }
 
+    public Persona getPersonaById(Long id) {
+        return personaRepository.findById(id).orElse(null);
+    }
+
     @Override
     public void editarPersona(Long id, Persona personaActualizada) {
         //Busque la persona por id

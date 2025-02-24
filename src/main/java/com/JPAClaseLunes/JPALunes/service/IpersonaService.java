@@ -16,7 +16,7 @@ public interface IpersonaService {
 
     //metodo para buscar personas
     public Persona findPersona(Long id);
-
+    public Persona getPersonaById(Long id);
     //metodo para editar una persona
     void editarPersona(Long id, Persona personaActualizada);
 }
